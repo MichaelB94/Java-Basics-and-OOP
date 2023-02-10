@@ -17,6 +17,9 @@ public class Main {
     private static void exercise1() {
         System.out.println("Exercise 1:");
         // Write your code here
+        double value = 16;
+        double valueSquareRoot = Math.sqrt(value);
+        System.out.println(valueSquareRoot);
     }
 
     /**
@@ -37,6 +40,10 @@ public class Main {
         System.out.println("Min=");
 
         // Write your code here
+        int highestValue = Math.max(valueA,valueB);
+        int lowestValue = Math.min(valueA,valueB);
+        System.out.println("Max="+highestValue);
+        System.out.println("Min="+lowestValue);
     }
 
     /**
@@ -48,7 +55,8 @@ public class Main {
         int totalMoney = 50;
         int costPerBurger = 9;
         // Write your code here
-        System.out.println("Remainder=");
+        int remainder = totalMoney % costPerBurger;
+        System.out.println("Remainder="+remainder);
     }
 
     /**
@@ -65,17 +73,17 @@ public class Main {
 
         double ourValue = 4.5;
 
-        // Replace with your comment 1
+        //curl up
         System.out.println(ourValue + " after using ceiling=" + Math.ceil(ourValue));
-        // Replace with your comment 2
+        //curl
         System.out.println(ourValue + " after using floor=" + Math.floor(ourValue));
-        // Replace with your comment 3
+        //cur up
         System.out.println(ourValue + " after using round=" + Math.round(ourValue));
-        // Replace with your comment 4
+        //raise to the second power
         System.out.println(ourValue + " after using powerOf with the value of 2=" + Math.pow(ourValue, 2));
-        // Replace with your comment 5
+        //raise to the third power
         System.out.println(ourValue + " after using powerOf with the value of 3=" + Math.pow(ourValue, 3));
-        // Replace with your comment 6
+        //random number between 0 and value
         System.out.println(ourValue + " times random =" + Math.random() * ourValue);
     }
 }
