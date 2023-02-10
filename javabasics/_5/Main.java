@@ -27,6 +27,11 @@ public class Main {
     private static void exercise1() {
         System.out.println("Exercise 1:");
         // Write your code here
+        int x = 7;
+        int increasingX = x+1;
+        System.out.println(increasingX);
+        int decreasingX = x-1;
+        System.out.println(decreasingX);
     }
 
     /**
@@ -38,6 +43,11 @@ public class Main {
     private static void exercise2() {
         System.out.println("\nExercise 2:");
         // Write your code here
+        double x = 4.00;
+        double doubleX = x*2;
+        System.out.println(doubleX);
+        double halfX = x/2;
+        System.out.println(halfX);
     }
 
     /**
@@ -55,6 +65,10 @@ public class Main {
     private static void exercise3() {
         System.out.println("\nExercise 3:");
         // Write your code here
+        double celsius= 24;
+        double fahrenheit= celsius*1.8+32;
+        System.out.println("Celsius: " + celsius);
+        System.out.println("Fahrenheit: " + fahrenheit);
     }
 
     /**
@@ -67,6 +81,15 @@ public class Main {
     private static void exercise4Bonus() {
         System.out.println("\nExercise 4:");
         // Write your code here
+        int age = 10;
+        age++;
+        age++;
+        age++;
+        age++;
+        age++;
+        System.out.println(age);
+
+
     }
 
     /**
@@ -83,6 +106,14 @@ public class Main {
     private static void exercise5Bonus() {
         System.out.println("\nExercise 5:");
         // Write your code here
+        int age = 50;
+        age-=50;
+        System.out.println(age);
+        int secondAge = 50;
+        secondAge--;
+        secondAge--;
+        secondAge-=48;
+        System.out.println(secondAge);
     }
 
     /**
@@ -92,8 +123,8 @@ public class Main {
     private static void playAroundWithModulus() {
         System.out.println("\nModulus testing!:");
 
-        int value = 5;   // <--- change this value
-        int modulus = 4; // <--- and this value to see the results of modulus
+        int value = 8;   // <--- change this value
+        int modulus = 3; // <--- and this value to see the results of modulus
 
         System.out.println("Modulus calculation, " + value + " % " + modulus +
                 "=" + value % modulus);
