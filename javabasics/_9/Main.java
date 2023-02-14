@@ -73,7 +73,7 @@ public class Main {
             }
         }
 
-
+    }
         /**
          * 4: Create an if statement with 4 outcomes, (1 if, 2 else if and an else)
          *
@@ -91,16 +91,16 @@ public class Main {
             int employeeAge = 30;
 
             //Write your if statement here
-        if(employeeAge>= 65) {
+        if(employeeAge >= 65) {
             System.out.println("Retired");
-        }else if(employeeAge>=35){
+        }else if(employeeAge >= 35){
             System.out.println("Experienced Worker");
-        }else if(employeeAge>=18){
+        }else if(employeeAge >= 18){
             System.out.println("New Worker");
         } else {
             System.out.println("School Age");
         }
 
-            }
+
         }
     }
