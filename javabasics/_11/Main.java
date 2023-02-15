@@ -28,6 +28,14 @@ public class Main {
                 orderCost = 2.50;
                 break;
             // Your cases here!
+            case "cheeseburger":
+                orderCalories = 850;
+                orderCost = 7.99;
+                break;
+            case "fries":
+                orderCalories = 250;
+                orderCost = 3.99;
+                break;
         }
 
         System.out.println("Order receipt:" +
@@ -55,6 +63,12 @@ public class Main {
         int inputNumber = 17;
 
         // Your switch statement here
+        switch (inputNumber) {
+            case 2, 3, 5, 7, 13, 17 -> System.out.println("This is the nth largest prime number under 20");
+            case 19                 -> System.out.println("This the largest prime number under 20");
+            case 11                 -> System.out.println("This is the 4th largest prime number under 20");
+            default                 -> System.out.println("Invalid entry");
+        }
     }
 
     /**
@@ -68,5 +82,6 @@ public class Main {
         System.out.println("\nExercise 3 - Prime  numbers (Bonus)");
 
         // Your switch statement here
+        //i've modified second exercise sorry.
     }
 }
