@@ -1,6 +1,6 @@
 package javabasics._12;
 
-public class Main {
+public class  Main {
     public static void main(String[] args) {
         System.out.println("Exercise 1 - String score:");
         exercise1("Java runs on over 2 billion devices", 15);
@@ -31,6 +31,22 @@ public class Main {
 
         // Start your code here
 
+        if (text.length() >= 20){
+            yourScore = 20;
+        } else {
+            yourScore = text.length();
+        }
+        if (text.contains("a")){
+            yourScore -= 5;
+        }
+        if (text == text.toLowerCase()){
+            yourScore += 10;
+        }
+        if (yourScore>20){
+            yourScore *= 2;
+        }
+
+
         // End it here
 
         System.out.print("Expected score=" + expectedScore +", actual score=" + yourScore);
@@ -55,6 +71,15 @@ public class Main {
     public static double exercise2(String mealType, double weight, double expectedScore) {
         double yourMealScore = 0;
         // Start your code here
+        if(mealType.toLowerCase().contains("sandwich")){
+            yourMealScore = weight*5;
+        } else if (mealType.toLowerCase().contains("soup")) {
+            yourMealScore = weight*3;
+        }
+
+        if (yourMealScore<5){
+            yourMealScore = 5;
+        }
 
         // End it here
 
