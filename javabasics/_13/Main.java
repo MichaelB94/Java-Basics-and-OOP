@@ -66,6 +66,8 @@ public class Main {
         menuPrices.add(2.49);
         menuPrices.add(7.99);
         System.out.println(menuItems.get(0)+" cost " + menuPrices.get(0));
+        System.out.println(menuItems.get(1)+" cost " + menuPrices.get(1));
+        System.out.println(menuItems.get(2)+" cost " + menuPrices.get(2));
 
     }
 
@@ -86,6 +88,7 @@ public class Main {
         int sum = items[0] + items[1] + items[2] + items[3] + items[4] + items[5] + items[6] +
                 items[7] + items [8] + items[9];
         System.out.println(sum);
+
 
         //Write your code here
     }

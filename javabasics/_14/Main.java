@@ -26,17 +26,37 @@ public class Main {
         int sumForA = 0;
 
         // Write your code for 1a here
+        for (Integer itemsAb : itemsA) {
+            sumForA = sumForA +itemsAb;
+        }
+        System.out.println(sumForA);
+
+
         System.out.println("\nExercise 1b:");
         int[] itemsB = new int[]{1, 56, 23};
 
         int sumForB = 0;
 
         // Write your code for 1b here
+
+
+        for (Integer itemsBb : itemsB) {
+            sumForB = sumForB +itemsBb;
+        }
+        System.out.println(sumForB);
+
+
         System.out.println("\nExercise 1c:");
 
         int sumForC = 0;
 
         // Write your code for 1c here, refer back to the lesson to check the fori syntax
+
+        for (int i = 0; i < itemsA.size() ; i++) {
+            sumForC = sumForC + itemsA.get(i);
+        }
+
+        System.out.println(sumForC);
 
         if (sumForA != sumForB || sumForB != sumForC) {
             System.out.println("Failed, sums are different!");
@@ -55,6 +75,17 @@ public class Main {
         int maxNumber = 0;
 
         // Write code here
+        for (Integer itemsB : items){
+            minNumber = Math.min(minNumber, itemsB);
+        }
+
+        for (Integer itemsC : items){
+            maxNumber = Math.max(maxNumber, itemsC);
+        }
+
+        System.out.println(maxNumber);
+
+        System.out.println(minNumber);
     }
 
     /**
