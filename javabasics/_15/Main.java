@@ -86,6 +86,6 @@ public class Main {
      * A3: while beacause he can easily run the first 80 element
      *
      * Q4: We want to read a file 100 lines at a time, without loading the full file into our program
-     * A4: do while beacuse he can check the conditions before strating the loop
+     * A4: do while beacuse he can check the conditions before strating the loop.
      */
 }
