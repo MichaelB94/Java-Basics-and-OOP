@@ -8,6 +8,7 @@ public class Main {
         exercise1();
         exercise2();
         exercise3();
+        exercise4();
     }
 
     /**
@@ -26,8 +27,8 @@ public class Main {
         int sumForA = 0;
 
         // Write your code for 1a here
-        for (Integer itemsAb : itemsA) {
-            sumForA = sumForA +itemsAb;
+        for (Integer item : itemsA) {
+            sumForA = sumForA + item;
         }
         System.out.println(sumForA);
 
@@ -40,8 +41,8 @@ public class Main {
         // Write your code for 1b here
 
 
-        for (Integer itemsBb : itemsB) {
-            sumForB = sumForB +itemsBb;
+        for (Integer item : itemsB) {
+            sumForB = sumForB +item;
         }
         System.out.println(sumForB);
 
@@ -75,16 +76,12 @@ public class Main {
         int maxNumber = 0;
 
         // Write code here
-        for (Integer itemsB : items){
-            minNumber = Math.min(minNumber, itemsB);
-        }
-
-        for (Integer itemsC : items){
-            maxNumber = Math.max(maxNumber, itemsC);
+        for (Integer item : items){
+            minNumber = Math.min(minNumber, item);
+            maxNumber = Math.max(maxNumber, item);
         }
 
         System.out.println(maxNumber);
-
         System.out.println(minNumber);
     }
 
@@ -96,7 +93,7 @@ public class Main {
 
         for (
                 int index = 0;
-                index < names.size(); // <---- Edit this line
+                index < 2; // <---- Edit this line
                 index = index + 1
         ) {
             System.out.println(names.get(index));
@@ -114,10 +111,12 @@ public class Main {
      * </a>
      */
     private static void exercise4() {
+        int currentMult = 8;
+
         for (
-                int timesTableCurrentValue = 5; // <---- Edit this line
-                timesTableCurrentValue <= 50; // <---- Edit this line
-                timesTableCurrentValue = timesTableCurrentValue + 5 // <---- Edit this line
+                int timesTableCurrentValue = currentMult; // <---- Edit this line
+                timesTableCurrentValue <= (currentMult*10); // <---- Edit this line
+                timesTableCurrentValue = timesTableCurrentValue + currentMult // <---- Edit this line
         ) {
             System.out.println(timesTableCurrentValue);
         }

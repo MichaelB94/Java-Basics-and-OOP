@@ -84,18 +84,27 @@ public class Main {
         double maxTestScore = 10;
         boolean isTestRetry = true;
         //Write your code here
-        if ((ourTestScore==9) && !isTestRetry){
+        double percent = ourTestScore*maxTestScore;
+
+        // if (isTestRetry&&(percent>=70)){
+        //    System.out.println("C");
+        //    }
+        // volendo potrei svolgerlo anche in questo modo togliendo la negazione di isTestRetry
+
+        if ((percent==90) && !isTestRetry){
             System.out.println("A");
-        } else if ((ourTestScore==8) && !isTestRetry){
+        } else if ((percent==80) && !isTestRetry){
             System.out.println("B");
-        } else if ((ourTestScore>7)&& isTestRetry){
+        } else if ((percent==70)&& isTestRetry){
             System.out.println("C");
-        } else if (ourTestScore==6){
+        } else if (percent==60){
             System.out.println("D");
-        } else {
+        } else if (percent<60){
             System.out.println("F");
         }
     }
+
+
 
 
     /**
