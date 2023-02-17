@@ -77,15 +77,15 @@ public class Main {
      * A Example: fori
      *
      * Q1: A user inputs their actions into an ATM, they can withdraw, deposit, check balance or exit. What loop should we use?
-     * A1:
+     * A1: for each beacuse for every customer he can run 4 different actions
      *
      * Q2: We have a list of 1000 users to send emails to
-     * A2:
+     * A2: for i because i can send the same email at 1000 users at time using 3 lines of code
      *
      * Q3: We want to print out the first 80 customer names from our bank database
-     * A3:
+     * A3: while beacause he can easily run the first 80 element
      *
      * Q4: We want to read a file 100 lines at a time, without loading the full file into our program
-     * A4:
+     * A4: do while beacuse he can check the conditions before strating the loop
      */
 }
