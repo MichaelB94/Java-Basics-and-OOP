@@ -20,13 +20,20 @@ public class Main {
      */
     private static void exercise1() {
         System.out.println("Exercise 1:");
-        // Put this into a function
-        double celsius = 30;
-        double fahrenheit = ((celsius * 9) / 5) + 32;
-        String conversionDescription = celsius + " Celsius is " + fahrenheit + " fahrenheit";
-        // End
-        System.out.println(conversionDescription);
+        System.out.println(celsiusToFahrenheit(30));
+
     }
+        private static String celsiusToFahrenheit(double celsius) {
+            // Put this into a function
+            double fahrenheit = ((celsius * 9) / 5) + 32;
+            String conversionDescription = celsius + " Celsius is " + fahrenheit + " fahrenheit";
+            return conversionDescription;
+            // End
+        }
+
+
+
+
 
     /**
      * 2: Create a function that processes and prints out all the names in the ArrayList
@@ -42,7 +49,16 @@ public class Main {
 
         for (String name : names) {
             // Call your function
+
+            System.out.println(formatting(name));
         }
+    }
+
+    public static String formatting(String name){
+        if (name.matches(".*[0-9].*")){
+            return "Invalid";
+        }
+        return name.toUpperCase().trim();
     }
 
     /**
@@ -57,5 +73,13 @@ public class Main {
         int weightInGrams = 500;
 
         // Call your function
+        printLunchInfo (myLunchPrice,lunchType,description,weightInGrams);
+
+
     }
+
+    private static void printLunchInfo(double myLunchPrice, String lunchType, String description, int weightInGrams) {
+        System.out.println(lunchType + " " + myLunchPrice + " " + description + " " + weightInGrams);
+    }
+
 }

@@ -1,5 +1,8 @@
 package javabasics._17;
 
+import java.time.LocalDate;
+import java.util.Date;
+
 public class Main {
     public static void main(String[] args) {
         exercise1();
@@ -25,6 +28,10 @@ public class Main {
                 """;
 
         long questionableFundsEuro = 5_000_000_000l;
+        long myBankBalanceLong = Long.valueOf(myBankBalanceEuro)+questionableFundsEuro;
+
+        System.out.println(myBankBalanceLong);
+
 
         //Add the questionable funds to your bank balance and print it out!
     }
@@ -40,12 +47,12 @@ public class Main {
      *    short = -32,768 to 32,768
      *    byte = -127 to 127
      *
-     *    2a: Someone's age
-     *    2b: The age of a baby in months
-     *    2c: Money in a hedgefund in euros
-     *    2d: Price of a good in euros on amazon.com
-     *    2e: The exact weight of an apple measured by scientific equipment
-     *    2f: The number of kilometers from any 2 places in the world
+     *    2a: Someone's age int
+     *    2b: The age of a baby in months byte
+     *    2c: Money in a hedgefund in euros long
+     *    2d: Price of a good in euros on amazon.com float
+     *    2e: The exact weight of an apple measured by scientific equipment double
+     *    2f: The number of kilometers from any 2 places in the world short
      */
 
     /**
@@ -63,5 +70,24 @@ public class Main {
      */
     public static void exercise3() {
         System.out.println("Exercise 3:");
+        LocalDate mydate = (LocalDate.now());
+        System.out.println(mydate);
+
+        System.out.println(mydate.getDayOfYear());
+        System.out.println(mydate.getDayOfWeek());
+        System.out.println(mydate.getDayOfMonth());
+        System.out.println(mydate.getMonth());
+        System.out.println(mydate.getMonthValue());
+
+
+
+        LocalDate birthday = LocalDate.of(1994,06,30);
+        System.out.println(mydate.isBefore(birthday));
+        System.out.println(mydate.isAfter(birthday));
+
+
     }
+
+
+
 }
