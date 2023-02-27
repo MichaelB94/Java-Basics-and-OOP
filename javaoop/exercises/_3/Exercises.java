@@ -20,6 +20,14 @@ public class Exercises {
         System.out.println("Exercise 1:");
 
         // Write and use your 5 getters and setters!
+        Student student = new Student();
+        student.setName("Michael");
+        student.setAge(28);
+        student.setSurname("Bernardi");
+        student.setSex('M');
+        student.setAddress("Via ninfe");
+        System.out.println(student.getName() + " " + student.getSurname() + " " + student.getAge() +
+                " " + student.getSex() + " " + student.getAddress());
     }
 
     /**
