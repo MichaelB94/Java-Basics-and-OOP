@@ -33,12 +33,19 @@ public class Exercises {
         List<Integer> studentAges = Arrays.asList(23, 31, 38);
 
         // Use a for i loop
+        for (int i = 0; i < studentAges.size(); i++) {
+            Student student = createNewStudent(studentNames.get(i),studentAges.get(i) );
+            System.out.println(student);
+        }
     }
 
     private static Student createNewStudent(String name, Integer age) {
         Student student = new Student();
 
         // Write your code here
+        student.name = name;
+        student.age = age;
+        System.out.println(student.name + " is " + student.age);
 
         return student;
     }
@@ -60,5 +67,12 @@ public class Exercises {
         System.out.println("\nExercise 3:");
 
         // Write your code here
+        List<String> studentNames = Arrays.asList("Alice", "Aragon", "Alex");
+        List<Integer> studentAges = Arrays.asList(23, 31, 38);
+
+        for (int i = 0; i < studentAges.size(); i++) {
+            student.add(studentNames.get(i),studentAges.get(i));
+        }
+    }//ho creato il campo student nella classe come un arraylist ma non capisco come poter aggiungere i vari studenti
     }
 }
