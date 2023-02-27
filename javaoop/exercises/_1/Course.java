@@ -8,5 +8,18 @@ public class Course {
     int qualityRatingOutOf10;
     int weekOfCourse;
     double costOfCourse;
-    ArrayList<String> student;
+    ArrayList<Student> studentlist = new ArrayList<>();
+    
+    public double average(){
+        double sum = 0;
+
+        for (int i = 0; i < studentlist.size(); i++) {
+            sum = sum + studentlist.get(i).age;
+        }
+
+        double average = sum /studentlist.size();
+        return average;
+    }
+    
+    
 }

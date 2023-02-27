@@ -1,11 +1,13 @@
 package javaoop.exercises._1;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class Exercises {
     public static void main(String[] args) {
         exercise2();
+        exercise3();
     }
 
     /**
@@ -70,9 +72,18 @@ public class Exercises {
         List<String> studentNames = Arrays.asList("Alice", "Aragon", "Alex");
         List<Integer> studentAges = Arrays.asList(23, 31, 38);
 
+        Course course = new Course();
+        ArrayList<Student> tmpListStudent = new ArrayList<Student>();
+
         for (int i = 0; i < studentAges.size(); i++) {
-            student.add(studentNames.get(i),studentAges.get(i));
+            tmpListStudent.add(createNewStudent(studentNames.get(i),studentAges.get(i)));
         }
-    }//ho creato il campo student nella classe come un arraylist ma non capisco come poter aggiungere i vari studenti
+
+        course.studentlist=tmpListStudent;
+
+        System.out.println(course.studentlist);
+        System.out.println(course.average());
     }
-}
+
+    }
+
